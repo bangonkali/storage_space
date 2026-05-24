@@ -2,10 +2,10 @@ import Flutter
 import Foundation
 import UIKit
 
-public class SwiftStorageSpacePlugin: NSObject, FlutterPlugin {
+public class StorageSpacePlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "storage_space", binaryMessenger: registrar.messenger())
-        let instance = SwiftStorageSpacePlugin()
+        let instance = StorageSpacePlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
 
